@@ -23,7 +23,7 @@ jobs:
             fail-fast: false
             matrix:
                 # normal, highest, non-dev installs
-                php-version: ${{ inputs.php-version-matrix }}
+                php-version: ${{ github.event.inputs.php-version-matrix }}
                 dependency-versions: [highest]
                 composer-options: [--prefer-stable]
                 include:
