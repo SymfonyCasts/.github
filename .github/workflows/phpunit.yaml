@@ -56,3 +56,6 @@ jobs:
 
             - name: Integration Tests
               run: vendor/bin/simple-phpunit -c $GITHUB_WORKSPACE/phpunit.xml.dist --testsuite integration
+
+            - name: Acceptance Tests
+              run: vendor/bin/simple-phpunit -c $GITHUB_WORKSPACE/phpunit.xml.dist --testsuite acceptance
