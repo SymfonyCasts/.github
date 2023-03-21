@@ -1,5 +1,14 @@
 name: Run PHPUnit tests
 
+on:
+    workflow_call:
+        inputs:
+            phpunit:
+                description: PHPUnit script (phpunit/simple-phpunit)
+                required: false
+                default: phpunit
+                type: string
+
 jobs:
     phpunit:
         name: PHP ${{ matrix.php-version }}, ${{ matrix.dependency-versions }} deps, ${{ matrix.composer-options }}
