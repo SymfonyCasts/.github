@@ -3,11 +3,11 @@ name: Run PHPUnit tests
 on:
     workflow_call:
         inputs:
-            php-version-matrix:
-                description: PHP versions used in matrix
-                required: false
-                default: ['7.4', '8.0', '8.1', '8.2']
-                type: choice
+#            php-version-matrix:
+#                description: PHP versions used in matrix
+#                required: false
+#                default: ['7.4', '8.0', '8.1', '8.2']
+#                type: choice
             phpunit:
                 description: PHPUnit script (phpunit/simple-phpunit)
                 required: false
