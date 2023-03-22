@@ -6,8 +6,8 @@ on:
             php-version-matrix:
                 description: PHP versions used in matrix
                 required: false
-                default: ['7.4', '8.0', '8.1', '8.2']
-                type: choice
+                default: '["7.2", "7.3", "7.4", "8.0", "8.1", "8.2"]'
+                type: string
             phpunit:
                 description: PHPUnit script (phpunit/simple-phpunit)
                 required: false
@@ -23,7 +23,7 @@ jobs:
             fail-fast: false
             matrix:
                 # normal, highest, non-dev installs
-                php-version: ${{ inputs.php-version-matrix }}
+                php-version: ${{ fromJSON(inputs.php-version-matrix) }}
                 dependency-versions: [highest]
                 composer-options: [--prefer-stable]
                 include:
