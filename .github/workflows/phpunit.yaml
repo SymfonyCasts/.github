@@ -8,6 +8,11 @@ on:
                 required: false
                 default: '["7.2", "7.3", "7.4", "8.0", "8.1", "8.2"]'
                 type: string
+            php-version-lowest:
+                description: PHP version for testing lowest deps
+                required: false
+                default: 7.2.5
+                type: string
             phpunit:
                 description: PHPUnit script (phpunit/simple-phpunit)
                 required: false
@@ -28,7 +33,7 @@ jobs:
                 composer-options: [--prefer-stable]
                 include:
                     # testing lowest PHP version with the lowest dependencies
-                    - php-version: 7.2.5
+                    - php-version: ${{ inputs.php-version-lowest }}
                       dependency-versions: lowest
                       composer-options: --prefer-lowest
 
