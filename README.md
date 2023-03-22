@@ -1,6 +1,6 @@
 # .github
 
-Centralized repository for reusable SymfonyCasts' GitHub CI remote config files
+Centralized repository for reusable SymfonyCasts' GitHub CI remote config files.
 
 The list of repositories that are dependent on this repo:
 
