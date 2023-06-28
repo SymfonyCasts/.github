@@ -13,11 +13,16 @@ on:
                 required: false
                 default: 7.2.5
                 type: string
+            runs-on:
+                description: The "runs-on" platform config
+                required: false
+                default: 'ubuntu-latest'
+                type: string
 
 jobs:
     phpunit:
         name: PHP ${{ matrix.php-version }}, ${{ matrix.dependency-versions }} deps, ${{ matrix.composer-options }}
-        runs-on: ubuntu-latest
+        runs-on: ${{ inputs.runs-on }}
 
         strategy:
             fail-fast: false
