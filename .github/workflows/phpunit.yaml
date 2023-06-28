@@ -13,11 +13,6 @@ on:
                 required: false
                 default: 7.2.5
                 type: string
-            phpunit:
-                description: PHPUnit script (phpunit/simple-phpunit)
-                required: false
-                default: phpunit
-                type: string
 
 jobs:
     phpunit:
