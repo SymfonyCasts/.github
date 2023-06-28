@@ -59,4 +59,4 @@ jobs:
                   composer-options: ${{ matrix.composer-options }} --prefer-dist
 
             - name: Tests
-              run: vendor/bin/simple-phpunit -c $GITHUB_WORKSPACE/phpunit.xml.dist
+              run: vendor/bin/simple-phpunit
