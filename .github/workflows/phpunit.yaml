@@ -13,16 +13,16 @@ on:
                 required: false
                 default: 7.2.5
                 type: string
-            phpunit:
-                description: PHPUnit script (phpunit/simple-phpunit)
+            runs-on:
+                description: The "runs-on" platform config
                 required: false
-                default: phpunit
+                default: 'ubuntu-latest'
                 type: string
 
 jobs:
     phpunit:
         name: PHP ${{ matrix.php-version }}, ${{ matrix.dependency-versions }} deps, ${{ matrix.composer-options }}
-        runs-on: ubuntu-latest
+        runs-on: ${{ inputs.runs-on }}
 
         strategy:
             fail-fast: false
@@ -58,14 +58,5 @@ jobs:
                   dependency-versions: ${{ matrix.dependency-versions }}
                   composer-options: ${{ matrix.composer-options }} --prefer-dist
 
-            - name: Unit Tests
-              run: vendor/bin/simple-phpunit -c $GITHUB_WORKSPACE/phpunit.xml.dist --testsuite unit
-
-            - name: Functional Tests
-              run: vendor/bin/simple-phpunit -c $GITHUB_WORKSPACE/phpunit.xml.dist --testsuite functional
-
-            - name: Integration Tests
-              run: vendor/bin/simple-phpunit -c $GITHUB_WORKSPACE/phpunit.xml.dist --testsuite integration
-
-            - name: Acceptance Tests
-              run: vendor/bin/simple-phpunit -c $GITHUB_WORKSPACE/phpunit.xml.dist --testsuite acceptance
+            - name: Tests
+              run: vendor/bin/simple-phpunit
