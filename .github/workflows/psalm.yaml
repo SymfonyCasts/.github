@@ -27,5 +27,4 @@ jobs:
               run: composer install --no-progress --prefer-dist --optimize-autoloader
 
             - name: Run Psalm
-              # TODO Probably --php-version should be replaced with 8.2 ?
-              run: psalm --output-format=github --php-version=8.0 -c $GITHUB_WORKSPACE/psalm.xml
+              run: psalm --output-format=github --php-version=8.2 -c $GITHUB_WORKSPACE/psalm.xml
