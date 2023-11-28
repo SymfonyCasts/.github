@@ -9,3 +9,6 @@ The list of repositories that are dependent on this repo:
 - [symfonycasts/verify-email-bundle](https://github.com/SymfonyCasts/verify-email-bundle)
 - [symfonycasts/messenger-monitor-bundle](https://github.com/SymfonyCasts/messenger-monitor-bundle)
 - [symfonycasts/tailwind-bundle](https://github.com/SymfonyCasts/tailwind-bundle)
+- [symfonycasts/sass-bundle](https://github.com/SymfonyCasts/sass-bundle)
+- [symfonycasts/micro-mapper](https://github.com/SymfonyCasts/micro-mapper)
+- [symfonycasts/dynamic-forms](https://github.com/SymfonyCasts/dynamic-forms)
