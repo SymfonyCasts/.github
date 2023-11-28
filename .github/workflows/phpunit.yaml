@@ -43,7 +43,7 @@ jobs:
                       composer-options: --prefer-lowest
 
                     # testing dev versions with the highest PHP
-                    - php-version: 8.2
+                    - php-version: 8.3
                       dependency-versions: highest
                       composer-options: '' # allow dev deps
 
