@@ -6,12 +6,12 @@ on:
             php-version-matrix:
                 description: PHP versions used in the matrix
                 required: false
-                default: '["7.2", "7.3", "7.4", "8.0", "8.1", "8.2", "8.3"]'
+                default: '["8.1", "8.2", "8.3"]'
                 type: string
             php-version-lowest:
                 description: PHP version for testing lowest deps
                 required: false
-                default: 7.2.5
+                default: 8.1.0
                 type: string
             runs-on:
                 description: The "runs-on" platform config
