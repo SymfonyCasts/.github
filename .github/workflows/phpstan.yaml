@@ -34,5 +34,9 @@ jobs:
               if: ${{ true == inputs.install-phpunit-bridge }}
               run: vendor/bin/simple-phpunit --version
 
+            - name: Install PHPStan
+              run: composer upgrade --no-progress --no-scripts --prefer-dist --working-dir=tools/phpstan
+
             - name: Run PHPStan
-              run: vendor/bin/phpstan analyse
+              run: tools/phpstan/vendor/bin/phpstan analyse
+
