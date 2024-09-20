@@ -6,7 +6,7 @@ on:
             php-version-matrix:
                 description: PHP versions used in the matrix
                 required: false
-                default: '["8.1", "8.2", "8.3"]'
+                default: '["8.1", "8.2", "8.3", "8.4"]'
                 type: string
             php-version-lowest:
                 description: PHP version for testing lowest deps
@@ -43,7 +43,7 @@ jobs:
                       composer-options: --prefer-lowest
 
                     # testing dev versions with the highest PHP
-                    - php-version: 8.3
+                    - php-version: 8.4
                       dependency-versions: highest
                       composer-options: '' # allow dev deps
 
