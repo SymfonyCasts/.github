@@ -12,3 +12,4 @@ The list of repositories that are dependent on this repo:
 - [symfonycasts/sass-bundle](https://github.com/SymfonyCasts/sass-bundle) [![CI](https://github.com/SymfonyCasts/sass-bundle/actions/workflows/ci.yaml/badge.svg)](https://github.com/SymfonyCasts/sass-bundle/actions/workflows/ci.yaml)
 - [symfonycasts/micro-mapper](https://github.com/SymfonyCasts/micro-mapper) [![CI](https://github.com/SymfonyCasts/micro-mapper/actions/workflows/ci.yaml/badge.svg)](https://github.com/SymfonyCasts/micro-mapper/actions/workflows/ci.yaml)
 - [symfonycasts/dynamic-forms](https://github.com/SymfonyCasts/dynamic-forms) [![CI](https://github.com/SymfonyCasts/dynamic-forms/actions/workflows/ci.yaml/badge.svg)](https://github.com/SymfonyCasts/dynamic-forms/actions/workflows/ci.yaml)
+- [symfonycasts/internal-test-helpers](https://github.com/SymfonyCasts/internal-test-helpers)
