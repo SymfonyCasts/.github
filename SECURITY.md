@@ -8,7 +8,7 @@ Instead, report it privately using GitHub’s private vulnerability reporting fo
 
 In the affected repository:
 - Open the **Security** tab.
-- Choose **Report a vulnerability** to submit a private disclosure.
+- Choose **Report a vulnerability**, or use this direct link: [/security/advisories/new](/security/advisories/new).
 
 Please include as much information as possible, including:
 - A clear description of the issue
